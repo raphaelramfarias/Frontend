@@ -1,0 +1,11 @@
+#conteudo{
+    text-align: center;
+}
+#class{
+    text-align: justify;
+}
+.tabela-centralizada {
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+}
