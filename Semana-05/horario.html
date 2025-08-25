@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Horário de Aulas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            max-width: 300px;
+            margin: 20px auto;
+            display: block;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 10px;
+        }
+        thead {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Horário de Aulas</h1>
+    <img src="livros.jpg" alt="livros">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Horário</th>
+                <th>Segunda</th>
+                <th>Terça</th>
+                <th>Quarta</th>
+                <th>Quinta</th>
+                <th>Sexta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>07:30 - 08:50</td>
+                <td>Matemática</td>
+                <td>Português</td>
+                <td>História</td>
+                <td>Geografia</td>
+                <td>Ciências</td>
+            </tr>
+            <tr>
+                <td>08:50 - 10:20</td>
+                <td>Inglês</td>
+                <td rowspan="2">Matemática</td>
+                <td>Religião</td>
+                <td>Educação Física</td>
+                <td>Lanoratório</td>
+            </tr>
+            <tr>
+                <td>10:20 - 11:00</td>
+                <td>História</td>
+                <td>Geografia</td>
+                <td rowspan="2">Portugês</td>
+                <td>História</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
