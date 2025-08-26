@@ -1,0 +1,37 @@
+    let alunos = [];
+
+    const btnAdicionar = document.getElementById("btnAdicionar");
+    const resultadoDiv = document.getElementById("Resultado");
+https://github.com/raphaelramfarias/Frontend/actions
+    btnAdicionar.addEventListener("click", () => {
+        const nome = document.getElementById("nomeAlunos").value.trim();
+        const notasTexto = document.getElementById("notasAluno").value.trim();
+
+        if (!nome || !notasTexto) {
+            alert("Preencha nome e notas.");
+            return;
+        }
+
+        const notas = notasTexto.split(",").map(n => parseFloat(n.trim()));
+
+        if (notas.some(isNaN)) {
+            alert("Notas inválidas. Digite números separados por vírgula.");
+            return;
+        }
+
+        alunos.push({ nome, notas });
+
+        resultadoDiv.innerHTML = "";
+        alunos.forEach(aluno => {
+            const media = calcularMedia(aluno.notas).toFixed(2);
+            const status = media < 7 ? "Reprovado" : "Aprovado";
+            resultadoDiv.innerHTML += `<p>${aluno.nome}: notas (${aluno.notas.join(", ")}), média: ${media} - <strong>${status}</strong></p>`;
+        });
+
+        document.getElementById("nomeAlunos").value = "";
+        document.getElementById("notasAluno").value = "";
+    });
+
+    function calcularMedia(notas) {
+        return notas.reduce((a, b) => a + b, 0) / notas.length;
+    }
