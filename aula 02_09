@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <div class="flex justify-between">
+   <nav class="fixed top-0 left-0 w-full bg-primary shadow-md z-50">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <a href="#home" class="text-xl font-bold text-blue-700">TechNova</a>
+      <ul class="hidden md:flex space-x-8 text-blue-700">
+        <li><a href="#servicos" class="hover:text-secondary transition">Serviços</a></li>
+        <li><a href="#portfolio" class="hover:text-secondary transition">Portfólio</a></li>
+        <li><a href="#contato" class="hover:text-secondary transition">Contato</a></li>
+      </ul>
+    </div>
+  </head>
+  <body class="bg-blue-300 text-black">
+   
+    <h2 class="text-4xl font-bold text-blue-950 text-center">Soluções Digitais para o Futuro</h2>
+<p class="text-center">Desenvolvemos Softwares sob médida para empresas que querem crescer com tecnologia</p>
+      
+          <button class="bg-blue-500 text-shadow-white text-center px-4 py-2 rounded hover:bg-blue-700 transition">
+            Clique aqui
+          </button>
+        </div>
+
+      </body>
+    </html>
