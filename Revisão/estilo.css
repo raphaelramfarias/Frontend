@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Simples</title>
+  <style>
+    #cabecalho {
+      background-color: lightblue;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .card {
+      background-color: #f9f9f9;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    #rodape {
+      background-color: lightgray;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .destaque {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="cabecalho">
+    <h1>Minha Página</h1>
+  </div>
+
+  <div class="card">
+    <p>Este é o primeiro bloco. Veja esta <span class="destaque">palavra destacada</span>!</p>
+  </div>
+
+  <div class="card">
+    <p>Este é o segundo bloco de conteúdo.</p>
+  </div>
+
+  <div id="rodape">
+    <p>Rodapé da página</p>
+  </div>
+
+</body>
+</html>
