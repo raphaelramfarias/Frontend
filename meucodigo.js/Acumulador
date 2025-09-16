@@ -1,15 +1,11 @@
 const users = [
-    { "name": "Carlos Mendes", "age": 15,
-        "contact": "+5511343511581", "city": "São Paulo" },
+    { "name": "Carlos Mendes", "age": 15, "contact": "+5511343511581", "city": "São Paulo" },
 
-    { "name": "Maria da Luz", "age": 78,
-        "contact": "+5511333110022", "city": "São Paulo" },
+    { "name": "Maria da Luz", "age": 78, "contact": "+5511333110022", "city": "São Paulo" },
 
-    { "name": "Carlinhos Brown", "age": 59,
-        "contact": "+5571998765432", "city": "Salvador" },
+    { "name": "Carlinhos Brown", "age": 59, "contact": "+5571998765432", "city": "Salvador" },
 
-    { "name": "Maria Betania", "age": 75,
-        "contact": "+5571985647231", "city": "Salvador" },
+    { "name": "Maria Betania", "age": 75, "contact": "+5571985647231", "city": "Salvador" },
 ];
 //objeto: vazio = {}
 //callback: (acc,user) => {...}
@@ -19,7 +15,7 @@ const user = users.reduce((acc, user) => {
     return acc;
 }, {});
 
-console.log(users);
+console.log(user);
 // { 'Carlos Mendes': 1, 'Maria da Luz': 1, 'Carlinhos Brown': 1, 'Maria Betania': 1 }
 
 const contagem = users.reduce((acc, user) => {
