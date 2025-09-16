@@ -18,3 +18,5 @@ function verificarDiadaSemana(dia) {
 console.log(verificarDiadaSemana("segunda")); // Dia útil
 console.log(verificarDiadaSemana("domingo")); // Fim de semana
 console.log(verificarDiadaSemana("feriado")); // Dia feriado
+
+//Node.js Exec
