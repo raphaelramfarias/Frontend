@@ -1,14 +1,15 @@
 const users = [
     { "name": "Carlos Mendes", "age": 15, "contact": "+5511343511581", "city": "São Paulo", "state": "SP" },
 
-    { "name": "Maria da Luz", "age": 78, "contact": "+5511333110022", "city": "São Paulo", "state": "SP" },
+    { "name": "Maria da Luz", "age": 75, "contact": "+5511333110022", "city": "São Paulo", "state": "SP" },
 
     { "name": "Carlinhos Brown", "age": 59, "contact": "+5571998765432", "city": "Salvador", "state": "BA" },
 
-    { "name": "Maria Betania", "age": 75, "contact": "+5571985647231", "city": "Salvador", "state": "BA" },
+    { "name": "Maria Betania", "age": 78, "contact": "+5571985647231", "city": "Salvador", "state": "BA" },
 ];
 //objeto: vazio = {}
 //callback: (acc,user) => {...}
+//! (a esclamação é para tratar o caso de undefined, null, 0, false)
 
 const user = users.reduce((acc, user) => {
     acc[user.name] = (acc[user.name] || 0) + 1;
@@ -32,3 +33,19 @@ const state = users.reduce((acc, user) => {
 }, {});
 
 console.log(state);
+
+const age = users.reduce((acc, user) => {
+    acc[user.age] = (acc[user.age] || 0) + 1;
+    return acc;
+}, {});
+
+console.log(age);
+
+const totalAge = users.reduce((sum, user) => sum + user.age, 0);
+const averageAge = totalAge / users.length;
+
+console.log(averageAge); // 56.75`);
+
+const maiorQueSetenta = users.filter(user => user.age > 70).length;
+
+console.log(maiorQueSetenta);
