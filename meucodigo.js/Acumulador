@@ -60,5 +60,11 @@ function saudacao(nome) {
     return exibirMensagem;
 }
 
-const saudacaoParaCarlos = saudacao("Carlos");
-saudacaoParaCarlos(); // Olá, Carlos! Seja bem-vindo(a)!
+const saudacaoParaCarlosMendes = saudacao("Carlos Mendes");
+saudacaoParaCarlosMendes(); // Olá, Carlos Mendes! Seja bem-vindo(a)!
+const saudacaoParaCarlinhosBrown = saudacao("Carlinhos Brown");
+saudacaoParaCarlinhosBrown(); // Olá, Carlinhos Brown! Seja bem-vindo(a)!
+const saudacaoParaMariadaLuz = saudacao("Maria da Luz");
+saudacaoParaMariadaLuz(); // Olá, Maria da Luz! Seja bem-vindo(a)!
+const saudacaoParaMariaBetania = saudacao("Maria Betania");
+saudacaoParaMariaBetania(); // Olá, Maria Betania! Seja bem-vindo(a)!
