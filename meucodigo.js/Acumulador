@@ -49,3 +49,16 @@ console.log(averageAge); // 56.75`);
 const maiorQueSetenta = users.filter(user => user.age > 70).length;
 
 console.log(maiorQueSetenta);
+
+
+function saudacao(nome) {
+    const mensagem = `Olá, ${nome}! Seja bem-vindo(a)!`;
+
+    function exibirMensagem() {
+        console.log(mensagem);
+    }
+    return exibirMensagem;
+}
+
+const saudacaoParaCarlos = saudacao("Carlos");
+saudacaoParaCarlos(); // Olá, Carlos! Seja bem-vindo(a)!
