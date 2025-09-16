@@ -1,0 +1,31 @@
+const users = [
+    { "name": "Carlos Mendes", "age": 15,
+        "contact": "+5511343511581", "city": "São Paulo" },
+
+    { "name": "Maria da Luz", "age": 78,
+        "contact": "+5511333110022", "city": "São Paulo" },
+
+    { "name": "Carlinhos Brown", "age": 59,
+        "contact": "+5571998765432", "city": "Salvador" },
+
+    { "name": "Maria Betania", "age": 75,
+        "contact": "+5571985647231", "city": "Salvador" },
+];
+//objeto: vazio = {}
+//callback: (acc,user) => {...}
+
+const user = users.reduce((acc, user) => {
+    acc[user.name] = (acc[user.name] || 0) + 1;
+    return acc;
+}, {});
+
+console.log(users);
+// { 'Carlos Mendes': 1, 'Maria da Luz': 1, 'Carlinhos Brown': 1, 'Maria Betania': 1 }
+
+const contagem = users.reduce((acc, user) => {
+    acc[user.city] = (acc[user.city] || 0) + 1;
+    return acc;
+}, {});
+
+console.log(contagem);
+// { 'São Paulo': 2, Salvador: 2 }  
